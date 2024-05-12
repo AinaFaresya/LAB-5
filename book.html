@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const bookData = {
+                "Book" :
+                [
+                    {
+                        "title":"The Great Gatsby",
+                        "author":"F. Scott Fitzgerald",
+                        "genres":["Fiction" , "Classics"]
+            
+                    },
+                    {    
+        
+                        "title":"To Kill a Mockingbird",
+                        "author":"Harper Lee",
+                        "genres":["Fiction","Coming-of-Age"]
+                    }
+                ]
+            };
+
+    console.log(bookData.Book[0].title);
+    console.log(bookData.Book[0].author);
+    console.log(bookData.Book[0].genres);
+
+    bookData.Book.forEach(book => {
+        console.log(book.genres);
+    });
+        </script>
+    </body>
+</html>
